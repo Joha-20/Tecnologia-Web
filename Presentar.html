@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Goose Bistro | Pizza-on-Demand</title></head>
+<body>
+<form action="http://blackgoosebistro.com/pizza.php" method="POST">
+<fieldset>
+    <legend>Your Informatio</legend>
+    <label>Name:</label><br>
+    <input type="text" name="customname"><br>
+    <label>Address:</label><br>
+    <input type="text" name:"address"><br>
+    <label>Phone:</label><br>
+    <input type="celphone" name="celphone"><br>
+    <label>E-mail</label><br>
+    <input type="email" name="email"><br>
+    <label>Delivery Instructions:</label><br>
+    <textarea name="instructions" maxlength="400" placeholder="no more than 400
+    characters long."></textarea></fieldset>
+<fieldset>
+    <legend>Design Your Dream Pizza</legend>
+    <p><strong>Crust (choose one):</strong></p>
+    <input type="radio" name="crust" value="classic white">Classic white<br>
+    <input type="radio" name="crust" value="multigrain">Multigrain<br>
+    <input type="radio" name="crust" value="cheese-stuffed crust">Cheese-stuffed crust<br>
+    <p><strong>Toppings (Choose as many as you want):</strong></p>
+	<input type="checkbox" name="toppings[]" value="red sauce" checked> Red sauce<br>
+    <input type="checkbox" name="toppings[]" value="white sauce"> White sauce<br>
+    <input type="checkbox" name="toppings[]" value="mozzarella cheese"> Mozzarella cheese<br>
+    <input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni<br>
+    <input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms<br>
+    <input type="checkbox" name="toppings[]" value="peppers"> Peppers<br>
+    <input type="checkbox" name="toppings[]" value="anchovies"> Anchovies<br>
+    <p><strong>Number</strong></p>
+        <label>How many pizzas:</label>
+        <select name="pizzas">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+</fieldset><br>
+<input type="submit" value="Bring me a pizza!">
+</form>
+</body>
+</html>
